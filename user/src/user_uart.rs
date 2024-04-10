@@ -4,7 +4,7 @@ use crate::trace::{
     SERIAL_INTR_EXIT, SERIAL_RTS, SERIAL_RX, SERIAL_TX,
 };
 use alloc::collections::VecDeque;
-use alloc::sync::{Arc, Weak};
+use alloc::sync::Arc;
 use core::future::Future;
 use core::sync::atomic::Ordering::Relaxed;
 use core::sync::atomic::{AtomicIsize, AtomicUsize};

@@ -32,6 +32,7 @@ qemu-pac = { path = "../pac/qemu-pac", optional = true }
 futures = { version = "0.3", default-features = false }
 
 [features]
+default = ["board_qemu"]
 board_qemu = ["uart8250", "qemu-pac"]
 board_lrv = ["uart_xilinx", "lrv-pac"]
 trace = []

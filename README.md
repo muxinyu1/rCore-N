@@ -26,7 +26,7 @@ I have added N Extension CSRs of RISC-V support to stable-5.0 of QEMU. [duskmoon
 git clone https://github.com/duskmoon314/qemu.git
 mkdir qemu-build
 cd qemu-build
-../qemu/configure --target-list="riscv64-softmmu"
+../qemu/configure --target-list="riscv64-softmmu" --extra-cflags=-Wno-error
 make -j8
 ```
 
