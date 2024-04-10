@@ -5,12 +5,15 @@
 extern crate user_lib;
 extern crate alloc;
 
+use async_uart::async_uart::*;
+
 use alloc::string::String;
 use alloc::sync::Arc;
 use lazy_static::*;
 use riscv::register::uie;
 use spin::Mutex;
-use user_lib::{claim_ext_int, init_user_trap, set_ext_int_enable, user_uart::*, yield_};
+
+use user_lib::{claim_ext_int, init_user_trap, set_ext_int_enable, yield_};
 
 const LF: u8 = 0x0au8;
 const CR: u8 = 0x0du8;

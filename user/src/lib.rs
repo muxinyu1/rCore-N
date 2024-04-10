@@ -10,7 +10,6 @@ mod lang_items;
 mod syscall;
 pub mod trace;
 pub mod trap;
-pub mod user_uart;
 
 extern crate alloc;
 #[macro_use]

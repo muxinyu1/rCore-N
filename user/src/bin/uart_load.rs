@@ -5,6 +5,8 @@
 extern crate user_lib;
 extern crate alloc;
 
+use async_uart::async_uart::*;
+
 use alloc::{sync::Arc, vec::Vec};
 use bitflags::bitflags;
 use core::{
@@ -34,7 +36,6 @@ use user_lib::{
         SERIAL_TEST_ENTER, SERIAL_TEST_EXIT, U_TRAP_RETURN,
     },
     trap::{get_context, hart_id, Plic},
-    user_uart::*,
     write,
 };
 

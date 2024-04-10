@@ -31,6 +31,8 @@ lrv-pac = { path = "../pac/lrv-pac", optional = true }
 qemu-pac = { path = "../pac/qemu-pac", optional = true }
 futures = { version = "0.3", default-features = false }
 
+async-uart = { git = "https://github.com/muxinyu1/async-uart"}
+
 [features]
 default = ["board_qemu"]
 board_qemu = ["uart8250", "qemu-pac"]
